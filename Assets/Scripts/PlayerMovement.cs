@@ -6,20 +6,18 @@ using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private NavMeshAgent navMeshAgent;
+    public NavMeshAgent navMeshAgent;
     [SerializeField]
     private float rotateSpeedMovement = 0.1f;
-    private float rotateVelocity;
+    public float rotateVelocity;
+
+    private PlayerCombat combatScript;
     void Awake()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();  
-    }
-    void Start()
-    {
-        
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        combatScript = GetComponent<PlayerCombat>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Mouse1))
@@ -36,8 +34,10 @@ public class PlayerMovement : MonoBehaviour
 
                 // ROTATION
                 Quaternion rotationToLookAt = Quaternion.LookRotation(hit.point - transform.position);
-                float rotationY = Mathf.SmoothDampAngle(transform.eulerAngles.y, rotationToLookAt.eulerAngles.y,
-                ref rotateVelocity, rotateSpeedMovement * (Time.deltaTime));
+                float rotationY = Mathf.SmoothDampAngle(transform.eulerAngles.y, 
+                rotationToLookAt.eulerAngles.y,
+                ref rotateVelocity, 
+                rotateSpeedMovement * (Time.deltaTime * 5));
 
                 transform.eulerAngles = new Vector3(0, rotationY, 0);
             }
