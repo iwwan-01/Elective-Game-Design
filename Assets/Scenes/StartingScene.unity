@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: c904ea0a7bebb68498aba6dac7764cdc, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 36acfc4c5f01bf04699494816494d1f5, type: 2}
 --- !u!1 &338861736
 GameObject:
   m_ObjectHideFlags: 0
@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 338861740}
   - component: {fileID: 338861739}
   - component: {fileID: 338861738}
-  - component: {fileID: 338861742}
   - component: {fileID: 338861737}
   m_Layer: 0
   m_Name: Enemy
@@ -227,28 +226,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338861736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 4}
+  m_LocalPosition: {x: 0, y: 0.3, z: 4}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &338861742
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338861736}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &582114823
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 582114824}
@@ -579,6 +562,7 @@ GameObject:
   - component: {fileID: 1321143711}
   - component: {fileID: 1321143710}
   - component: {fileID: 1321143714}
+  - component: {fileID: 1321143716}
   - component: {fileID: 1321143715}
   m_Layer: 0
   m_Name: Player
@@ -657,7 +641,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321143709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -700,3 +684,21 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1321143716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321143709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a17889e3f75564ea9dcc456009d508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetedEnemy: {fileID: 0}
+  attackRange: 0
+  rotateSpeedAttack: 0
+  basicAtkIdle: 0
+  isChampionAlive: 0
+  performMeleeAttack: 1

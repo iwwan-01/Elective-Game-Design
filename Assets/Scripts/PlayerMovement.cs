@@ -20,6 +20,17 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if(combatScript.targetedEnemy != null)
+        {
+            if(combatScript.targetedEnemy.GetComponent<PlayerCombat>() != null)
+            {
+                if(!combatScript.targetedEnemy.GetComponent<PlayerCombat>().isChampionAlive)
+                {
+                    combatScript.targetedEnemy = null;
+                }
+            }
+        }
+
         if(Input.GetKeyDown(KeyCode.Mouse1))
         {
             RaycastHit hit;
@@ -28,18 +39,23 @@ public class PlayerMovement : MonoBehaviour
             // Checks if the raycast shot hits something that uses NavMesh
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                // MOVEMENT
-                // Have the player move to the raycast hit point
-                navMeshAgent.destination = hit.point;
+                if(hit.collider.tag == "Ground")
+                {
+                    // MOVEMENT
+                    // Have the player move to the raycast hit point
+                    navMeshAgent.SetDestination(hit.point);
+                    combatScript.targetedEnemy = null;
+                    navMeshAgent.stoppingDistance = 0;
 
-                // ROTATION
-                Quaternion rotationToLookAt = Quaternion.LookRotation(hit.point - transform.position);
-                float rotationY = Mathf.SmoothDampAngle(transform.eulerAngles.y, 
-                rotationToLookAt.eulerAngles.y,
-                ref rotateVelocity, 
-                rotateSpeedMovement * (Time.deltaTime * 5));
+                    // ROTATION
+                    Quaternion rotationToLookAt = Quaternion.LookRotation(hit.point - transform.position);
+                    float rotationY = Mathf.SmoothDampAngle(transform.eulerAngles.y,
+                    rotationToLookAt.eulerAngles.y,
+                    ref rotateVelocity,
+                    rotateSpeedMovement * (Time.deltaTime * 5));
 
-                transform.eulerAngles = new Vector3(0, rotationY, 0);
+                    transform.eulerAngles = new Vector3(0, rotationY, 0);
+                }
             }
         }
     }

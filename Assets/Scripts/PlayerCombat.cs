@@ -14,7 +14,9 @@ public class PlayerCombat : MonoBehaviour
     
     public GameObject targetedEnemy;
     
+    [SerializeField]
     private float attackRange;
+    [SerializeField]
     private float rotateSpeedAttack;
 
     private PlayerMovement movementScript;
