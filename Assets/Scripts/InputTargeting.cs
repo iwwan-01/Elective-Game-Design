@@ -5,7 +5,7 @@ using UnityEngine;
 public class InputTargeting : MonoBehaviour
 {
     private GameObject selectedChampion;
-    public bool championPlayer;
+    private bool championPlayer;
     RaycastHit hit;
     // Start is called before the first frame update
     void Awake()
@@ -27,6 +27,7 @@ public class InputTargeting : MonoBehaviour
                         selectedChampion.GetComponent<PlayerCombat>().targetedEnemy = hit.collider.gameObject;
 
                     }
+
                 } else if(hit.collider.gameObject.GetComponent<Targetable>() == null) {
                     selectedChampion.GetComponent<PlayerCombat>().targetedEnemy = null;
                 }
