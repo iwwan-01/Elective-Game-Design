@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour
 
     void Awake()
     {
-        playerPosition = GameObject.Find("Player").GetComponent<Transform>();   
+        playerPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
     // Start is called before the first frame update
     void Start()
