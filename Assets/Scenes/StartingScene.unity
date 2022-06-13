@@ -716,6 +716,23 @@ MonoBehaviour:
   basicAtkIdle: 0
   isChampionAlive: 0
   performMeleeAttack: 1
+--- !u!1 &1351913283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1349150361055734, guid: dca8e056b77d49c4aafe4dbcc2bab713, type: 3}
+  m_PrefabInstance: {fileID: 1529601937}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1351913289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351913283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a130adcf37481fc47b5370311dcae3cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1529601937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -786,6 +803,14 @@ PrefabInstance:
     - target: {fileID: 4655139138601034, guid: dca8e056b77d49c4aafe4dbcc2bab713, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2913361523623430121, guid: dca8e056b77d49c4aafe4dbcc2bab713, type: 3}
+      propertyPath: rotateSpeedMovement
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3074791628133097070, guid: dca8e056b77d49c4aafe4dbcc2bab713, type: 3}
+      propertyPath: m_Speed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dca8e056b77d49c4aafe4dbcc2bab713, type: 3}
