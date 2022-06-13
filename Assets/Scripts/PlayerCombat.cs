@@ -75,13 +75,14 @@ public class PlayerCombat : MonoBehaviour
         performMeleeAttack = false;
         animator.SetTrigger("Attack");
 
-        yield return new WaitForSeconds(statsScript.attackTime / (100 + statsScript.attackTime) * 0.01f);
+        yield return new WaitForSeconds(statsScript.attackTime / ((100 + statsScript.attackTime) * 0.01f));
 
         if(targetedEnemy == null)
         {
             animator.ResetTrigger("Attack");
             performMeleeAttack = true;
         }
+     
     }
 
     void MeleeAttack()
