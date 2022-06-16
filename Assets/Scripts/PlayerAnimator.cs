@@ -19,7 +19,6 @@ public class PlayerAnimator : MonoBehaviour
     void Update()
     {
         float speed = navMeshAgent.velocity.magnitude / navMeshAgent.speed;
-        animator.SetFloat("speedh", speed, motionSmoothTime, Time.deltaTime);
-        animator.SetFloat("speedv", speed, motionSmoothTime, Time.deltaTime);
+        animator.SetFloat("Speed", speed, motionSmoothTime, Time.deltaTime);
     }
 }

@@ -135,8 +135,9 @@ GameObject:
   - component: {fileID: 338861740}
   - component: {fileID: 338861739}
   - component: {fileID: 338861738}
-  - component: {fileID: 338861737}
   - component: {fileID: 338861742}
+  - component: {fileID: 338861737}
+  - component: {fileID: 338861743}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -249,6 +250,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &338861743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338861736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e9e870e9ea81b49b4c07fe60b1bb25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 50
+  attackDamage: 0
+  attackSpeed: 0
+  attackTime: 0
 --- !u!1 &582114823
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +725,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7887404245876142181, guid: c0a31a9bc32dd8147974376d9a6c41bc, type: 3}
       propertyPath: attackTime
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887404245876142181, guid: c0a31a9bc32dd8147974376d9a6c41bc, type: 3}
+      propertyPath: attackSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7887404245876142181, guid: c0a31a9bc32dd8147974376d9a6c41bc, type: 3}
+      propertyPath: attackDamage
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7887404245876142185, guid: c0a31a9bc32dd8147974376d9a6c41bc, type: 3}
