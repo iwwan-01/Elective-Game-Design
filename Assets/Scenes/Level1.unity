@@ -2642,7 +2642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6256b6f73a291ea4caa1b800d80262a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinAmount: 8
+  coinAmount: 0
   coinText: {fileID: 0}
 --- !u!4 &685392761 stripped
 Transform:
@@ -5076,7 +5076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b8bff951cbf0a47a65351f45cda708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killAmount: 8
+  killAmount: 0
   killText: {fileID: 0}
 --- !u!1001 &1248211490
 PrefabInstance:
