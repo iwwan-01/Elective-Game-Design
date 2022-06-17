@@ -20,7 +20,7 @@ public class WinCondition : MonoBehaviour
     {
        if (killCounter.killAmount == 8 && coinCounter.coinAmount == 8)
         {
-            SceneManager.LoadScene("Win");
+            SceneManager.LoadScene("WinScreen");
         } 
     }
 }
