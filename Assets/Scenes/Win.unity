@@ -2229,7 +2229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1039586239448412129, guid: b6b7d71e72fb1bc40a3526ac623256c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.892
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: 1039586239448412129, guid: b6b7d71e72fb1bc40a3526ac623256c4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2237,7 +2237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1039586239448412129, guid: b6b7d71e72fb1bc40a3526ac623256c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.673
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 1039586239448412129, guid: b6b7d71e72fb1bc40a3526ac623256c4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2642,7 +2642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6256b6f73a291ea4caa1b800d80262a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinAmount: 8
+  coinAmount: 0
   coinText: {fileID: 0}
 --- !u!4 &685392761 stripped
 Transform:
@@ -3787,7 +3787,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980279400}
-  - component: {fileID: 980279401}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3809,18 +3808,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &980279401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980279399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 171c018bfbf1e4e4abbd4e704a941fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1010740352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8158749112333401311, guid: 50c1d12c03b8c40b1ad42357d92ba216, type: 3}
@@ -5076,7 +5063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34b8bff951cbf0a47a65351f45cda708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killAmount: 8
+  killAmount: 0
   killText: {fileID: 0}
 --- !u!1001 &1248211490
 PrefabInstance:
