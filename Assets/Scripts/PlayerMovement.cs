@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
             // Checks if the raycast shot hits something that uses NavMesh
             if (Physics.Raycast(ray, out hit, Mathf.Infinity))
             {
-                if(hit.collider.tag == "Ground")
+                if(hit.collider.tag == "Ground" || hit.collider.tag == "Coin")
                 {
                     // MOVEMENT
                     // Have the player move to the raycast hit point
