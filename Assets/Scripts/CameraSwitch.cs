@@ -29,7 +29,7 @@ public class CameraSwitch : MonoBehaviour
             }
         } else if (camViewChanged)
         {
-            if (Input.GetKeyDown(KeyCode.Y))
+            if (Input.GetKeyDown(KeyCode.Y) || Input.GetKeyDown(KeyCode.Space))
             {
                 camViewChanged = false;
                 cameraMoveScript.enabled = false;

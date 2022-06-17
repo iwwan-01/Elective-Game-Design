@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    private float camSpeed = 20f;
-    private float screenSizeThickness = 20f;
+    private float camSpeed = 10f;
+    private float screenSizeThickness = 10f;
 
     // Update is called once per frame
     void Update()
