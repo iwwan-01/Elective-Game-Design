@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CoinCounter : MonoBehaviour
 {
-    public int coinAmount = 200;
+    public int coinAmount = 0;
     [SerializeField]
     private Text coinText;
     // Start is called before the first frame update
