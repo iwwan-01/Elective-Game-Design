@@ -715,7 +715,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -19}
-  m_SizeDelta: {x: 196, y: 219.1}
+  m_SizeDelta: {x: 250, y: 219.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1318549084
 MonoBehaviour:
@@ -752,14 +752,17 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Right M Click - Move/Attack
 
-    A - Show Range/Hide Range
+    MWheel Up/Down - Zoom In/Zoom Out
 
-    A + Left
-    M Click - Attack
+    A
+    - Show Range/Hide Range
+
+    A + Left M Click - Attack
 
     Y - Unlock/Lock Camera
 
-    ESC - Exit Game'
+    ESC
+    - Exit Game'
 --- !u!222 &1318549085
 CanvasRenderer:
   m_ObjectHideFlags: 0
